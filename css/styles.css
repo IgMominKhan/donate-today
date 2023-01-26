@@ -1,0 +1,322 @@
+/* resets */
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: poppins;
+    line-height: 1.55;
+    font-size: 1.125rem;
+
+
+}
+
+h1,
+h2,
+h3,
+strong {
+    line-height: 1.2;
+    font-family: Inter;
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.btn {
+    border: none;
+    outline: none;
+
+}
+
+/* utilities */
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+/************* prototypes *************/
+header {
+    color: white !important;
+    background-image: linear-gradient(hsla(0, 0%, 7%, 0), hsl(0, 0%, 7%)), url("../images/banner01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+}
+
+.hero-desc {
+    color: white;
+}
+
+.section__title,
+.section__sub-title {
+    color: #121212;
+}
+
+.hero-heading {
+    max-width: 25ch;
+    margin-inline: auto;
+}
+
+.section__desc,
+.hero-desc {
+    max-width: 60ch;
+    margin-inline: auto;
+}
+
+
+
+
+.section__desc,
+.article__desc,
+p {
+    color: #707070;
+
+}
+
+
+.article__desc {
+    font-size: 1rem;
+}
+
+strong {
+    color: #707070;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding: 1em 1.5em;
+    display: inline-block;
+    margin: .5em;
+}
+
+strong.default {
+    color: #ff5959;
+    background-color: #ffeeee;
+    border: 1px solid #ff5959;
+}
+
+strong+strong {
+    /* margin-left: 1em;; */
+}
+
+#custom-amount {
+    width: min(100%, 50rem);
+    margin-inline: auto;
+    display: block;
+    color: #b3b3b3;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #dadada;
+    text-align: center;
+    padding: 1.5em 1em .5em;
+    font-size: 1.125rem;
+
+}
+
+
+.btn-primary {
+    margin: 1.6em auto;
+
+    display: block;
+    background-color: #ff5959;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: .75em 1.2em;
+    border-radius: 5px;
+}
+
+.plans {
+    gap: 1.5em;
+}
+
+.plan {
+    padding: 1.5em .75em;
+    border-radius: 5px;
+}
+
+
+.food {
+    background-color: #d9dbe1;
+
+}
+
+.shelter {
+    background-color: hsla(0, 100%, 67%, .1);
+}
+
+.child-education {
+    background-color: #fff4d6
+}
+
+.btn-left {
+    margin-left: 0;
+}
+
+
+
+.icon {
+    margin: auto
+}
+
+
+
+input[type='email'] {
+    padding: 1.125rem;
+    font-size: 1rem;
+    background-color: #d9d9d9;
+    color: #aa9f9f;
+    font-weight: bold;
+    border-radius: 5px;
+    width: min(100%, 20rem);
+    display: inline-block;
+    margin-top: 1.875rem;
+
+}
+
+
+footer {
+    background-color: #0b0d17;
+    padding: 3.5rem;
+    font-family: Manrope;
+    font-size: .875rem;
+}
+
+.footer__title {
+    margin-block: auto;
+    margin-bottom: .5em;
+    color: #ff5959;
+    font-size: 2.6125rem;
+}
+
+
+/**************** layout ***************/
+
+.container {
+    width: min(90%, 64.5rem);
+    margin: 0 auto;
+}
+
+
+main {
+    padding-block: 2.5rem;
+}
+
+
+section {
+    padding-top: 3rem;
+}
+
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.article {
+    padding-top: 4em;
+}
+
+.get-update {
+    padding: 0
+}
+
+.get-email-form {
+
+    background-color: #FFF4D6;
+    margin: 3rem auto 0;
+    max-width: min(100%, 50rem);
+    padding: .5rem 1rem;
+}
+
+
+footer p {
+    color: white;
+}
+
+@media screen and (min-width:70rem) {
+
+    header {
+        padding: 8em;
+    }
+
+    .hero-heading {
+        font-size: 4rem;
+    }
+
+    .hero-desc {
+        font-size: 1.125rem;
+    }
+
+    .section__title {
+        font-size: 2.875rem;
+
+    }
+
+    .section__desc {
+        font-size: 1.125rem;
+    }
+
+
+    .btn {
+        font-size: 1.25rem;
+    }
+
+    strong {
+        font-size: 1.875rem;
+
+    }
+
+    .section__sub-title {
+
+        font-size: 1.4rem;
+    }
+
+    input[type='email'] {
+        border-radius: 5px 0 0 5px;
+    }
+
+    .btn-subscribe {
+        border-radius: 0 5px 5px 0;
+        display: inline-block;
+    }
+
+
+    .flex {
+        flex-direction: row;
+        gap: 3rem
+    }
+
+    .flex+.flex {
+        margin-top: 6.25rem;
+    }
+
+    .change-order {
+        order: 2;
+    }
+
+    .flex>* {
+        flex: 1
+    }
+
+    .get-update {
+        padding: 3rem;
+    }
+
+    .get-email-form {
+        padding: 2rem
+    }
+}
